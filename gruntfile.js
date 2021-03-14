@@ -25,7 +25,7 @@ module.exports = function (grunt) {
         },
         cssmin: {
             target: {
-                files: { 'styleprefixed.min.css': ['css/styleprefixed.css'] }
+                files: { 'css/stylecopied.min.css': ['css/stylecopied.css'] }
             }
         },
         uglify: {
@@ -42,5 +42,5 @@ module.exports = function (grunt) {
     // grunt.loadNpmTasks('grunt-contrib-cssmin');
     // grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.registerTask('default', ['copy']);
+    grunt.registerTask('default', ['uglify']);
 }
